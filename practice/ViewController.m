@@ -8,13 +8,12 @@
 
 #import "ViewController.h"
 
-//importing the FactBook header file so we can have acces to their properties
 #import "FactBook.h"
 #import "ColorWheel.h"
 
 @interface ViewController ()
-@property NSArray *players;
-@property NSArray *shirts;
+@property NSArray *facts;
+
 
 @end
 
@@ -22,49 +21,44 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    //here we are initializing factBook object, self is the ViewController
-    
-    self.factBook = [[FactBook alloc]init];
-    
-    //here we are initializing the ColorWhell instance
-    
+
     self.colorWheel = [[ColorWheel alloc] init];
-    
-    
-    //now lets change the background color every time the view loads the view has a property called bakcground color and we can use it
-    
     UIColor *randomColor = [self.colorWheel randomColor];
     self.funFactButton.tintColor = randomColor;
     self.view.backgroundColor = randomColor;
-    
-    
-        //Now we have acces to the FactBook data model, here we are initializing the lable with a random fact when the ViewDodload method runs
-    
-    self.funFactLabel.text = [self.factBook  randomFact];
-
- 
+    [self getJson];
 }
 
-- (void)didReceiveMemoryWarning{
-    [super didReceiveMemoryWarning];
-    
+- (void)getJson {
+    NSString *urlString = @"http://catfacts-api.appspot.com/api/facts?number=100";
+    NSURL *url = [NSURL URLWithString:urlString];
+    NSURLSession *session = [NSURLSession sharedSession];
+    NSURLSessionTask *task = [session dataTaskWithURL:url completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
+        
+        NSDictionary *dictionary = [NSJSONSerialization JSONObjectWithData:data options:0 error:&error];
+        
+        self.facts = [NSMutableArray new];
+        self.facts = dictionary[@"facts"];
+        
+        dispatch_async(dispatch_get_main_queue(), ^(void){
+            //Run UI Updates
+            for (NSString *fact in self.facts) {
+                FactBook *factBook  = [[FactBook alloc]initWithFact:fact];
+                self.funFactLabel.text = factBook.fact;
+            }
+        });
+    }];
+    [task resume];
 }
 
 
 - (IBAction)showFunFact {
-
-    //here we are setting the text of the porperty funFactlabel = to [self.factbook that meas this new instance of FactBook in here and sending the randomFact message ] the randomFact message is implemented in the model, this is the controller 
-  
     
-      UIColor *randomColor = [self.colorWheel randomColor];
-      self.funFactButton.tintColor = randomColor;
-      self.view.backgroundColor = randomColor;
-    
-    
-      self.funFactLabel.text = [self.factBook randomFact];
-
-    
+    UIColor *randomColor = [self.colorWheel randomColor];
+    self.funFactButton.tintColor = randomColor;
+    self.view.backgroundColor = randomColor;
+    int randomInt = arc4random_uniform((int)self.facts.count);
+    self.funFactLabel.text = [self.facts objectAtIndex:randomInt];
 }
 
 

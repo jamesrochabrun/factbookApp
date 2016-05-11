@@ -9,10 +9,7 @@
 #import <Foundation/Foundation.h>
 
 @interface FactBook : NSObject
-
-@property (strong, nonatomic) NSArray *facts;
-
--(NSString *)randomFact;
-
+@property NSString *fact;
+- (instancetype)initWithFact:(NSString *)fact;
 
 @end
