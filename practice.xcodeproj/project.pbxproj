@@ -66,12 +66,9 @@
 			children = (
 				64BB7F421C8DFB78005627C4 /* AppDelegate.h */,
 				64BB7F431C8DFB78005627C4 /* AppDelegate.m */,
-				64BB7F451C8DFB78005627C4 /* ViewController.h */,
-				64BB7F461C8DFB78005627C4 /* ViewController.m */,
-				64BB7F561C8E1CE9005627C4 /* FactBook.h */,
-				64BB7F571C8E1CE9005627C4 /* FactBook.m */,
-				64BB7F591C8E33D2005627C4 /* ColorWheel.h */,
-				64BB7F5A1C8E33D2005627C4 /* ColorWheel.m */,
+				7B5973C01CE2FE21001A7F28 /* Controller */,
+				7B5973BF1CE2FE13001A7F28 /* model */,
+				7B5973C11CE2FE2E001A7F28 /* view */,
 				64BB7F481C8DFB78005627C4 /* Main.storyboard */,
 				64BB7F4B1C8DFB79005627C4 /* Assets.xcassets */,
 				64BB7F4D1C8DFB79005627C4 /* LaunchScreen.storyboard */,
@@ -87,6 +84,33 @@
 				64BB7F401C8DFB78005627C4 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7B5973BF1CE2FE13001A7F28 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				64BB7F591C8E33D2005627C4 /* ColorWheel.h */,
+				64BB7F571C8E1CE9005627C4 /* FactBook.m */,
+				64BB7F5A1C8E33D2005627C4 /* ColorWheel.m */,
+				64BB7F561C8E1CE9005627C4 /* FactBook.h */,
+			);
+			name = model;
+			sourceTree = "<group>";
+		};
+		7B5973C01CE2FE21001A7F28 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				64BB7F451C8DFB78005627C4 /* ViewController.h */,
+				64BB7F461C8DFB78005627C4 /* ViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		7B5973C11CE2FE2E001A7F28 /* view */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = view;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -312,6 +336,7 @@
 				64BB7F551C8DFB79005627C4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
