@@ -13,9 +13,8 @@
 		64BB7F4A1C8DFB78005627C4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 64BB7F481C8DFB78005627C4 /* Main.storyboard */; };
 		64BB7F4C1C8DFB79005627C4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 64BB7F4B1C8DFB79005627C4 /* Assets.xcassets */; };
 		64BB7F4F1C8DFB79005627C4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 64BB7F4D1C8DFB79005627C4 /* LaunchScreen.storyboard */; };
-		64BB7F581C8E1CE9005627C4 /* FactBook.m in Sources */ = {isa = PBXBuildFile; fileRef = 64BB7F571C8E1CE9005627C4 /* FactBook.m */; };
 		64BB7F5B1C8E33D2005627C4 /* ColorWheel.m in Sources */ = {isa = PBXBuildFile; fileRef = 64BB7F5A1C8E33D2005627C4 /* ColorWheel.m */; };
-		7B5618061CE3A6F400A12A57 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7B5618041CE3A6F400A12A57 /* Model.xcdatamodeld */; };
+		7B5618061CE3A6F400A12A57 /* practice.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7B5618041CE3A6F400A12A57 /* practice.xcdatamodeld */; };
 		7B56180B1CE3A72F00A12A57 /* Fact+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B5618081CE3A72F00A12A57 /* Fact+CoreDataProperties.m */; };
 		7B56180C1CE3A72F00A12A57 /* Fact.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B56180A1CE3A72F00A12A57 /* Fact.m */; };
 /* End PBXBuildFile section */
@@ -31,15 +30,13 @@
 		64BB7F4B1C8DFB79005627C4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		64BB7F4E1C8DFB79005627C4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		64BB7F501C8DFB79005627C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		64BB7F561C8E1CE9005627C4 /* FactBook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FactBook.h; sourceTree = "<group>"; };
-		64BB7F571C8E1CE9005627C4 /* FactBook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FactBook.m; sourceTree = "<group>"; };
 		64BB7F591C8E33D2005627C4 /* ColorWheel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorWheel.h; sourceTree = "<group>"; };
 		64BB7F5A1C8E33D2005627C4 /* ColorWheel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ColorWheel.m; sourceTree = "<group>"; };
-		7B5618051CE3A6F400A12A57 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
-		7B5618071CE3A72F00A12A57 /* Fact+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Fact+CoreDataProperties.h"; sourceTree = "<group>"; };
-		7B5618081CE3A72F00A12A57 /* Fact+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Fact+CoreDataProperties.m"; sourceTree = "<group>"; };
-		7B5618091CE3A72F00A12A57 /* Fact.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Fact.h; sourceTree = "<group>"; };
-		7B56180A1CE3A72F00A12A57 /* Fact.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Fact.m; sourceTree = "<group>"; };
+		7B5618051CE3A6F400A12A57 /* practice.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = practice.xcdatamodel; sourceTree = "<group>"; };
+		7B5618071CE3A72F00A12A57 /* Fact+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Fact+CoreDataProperties.h"; path = "../Fact+CoreDataProperties.h"; sourceTree = "<group>"; };
+		7B5618081CE3A72F00A12A57 /* Fact+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "Fact+CoreDataProperties.m"; path = "../Fact+CoreDataProperties.m"; sourceTree = "<group>"; };
+		7B5618091CE3A72F00A12A57 /* Fact.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Fact.h; path = ../Fact.h; sourceTree = "<group>"; };
+		7B56180A1CE3A72F00A12A57 /* Fact.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Fact.m; path = ../Fact.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,10 +53,6 @@
 		64BB7F331C8DFB78005627C4 = {
 			isa = PBXGroup;
 			children = (
-				7B5618071CE3A72F00A12A57 /* Fact+CoreDataProperties.h */,
-				7B5618081CE3A72F00A12A57 /* Fact+CoreDataProperties.m */,
-				7B5618091CE3A72F00A12A57 /* Fact.h */,
-				7B56180A1CE3A72F00A12A57 /* Fact.m */,
 				64BB7F3E1C8DFB78005627C4 /* practice */,
 				64BB7F3D1C8DFB78005627C4 /* Products */,
 			);
@@ -76,14 +69,10 @@
 		64BB7F3E1C8DFB78005627C4 /* practice */ = {
 			isa = PBXGroup;
 			children = (
-				64BB7F421C8DFB78005627C4 /* AppDelegate.h */,
-				64BB7F431C8DFB78005627C4 /* AppDelegate.m */,
 				7B5973C01CE2FE21001A7F28 /* Controller */,
 				7B5973BF1CE2FE13001A7F28 /* model */,
 				7B5973C11CE2FE2E001A7F28 /* view */,
-				64BB7F481C8DFB78005627C4 /* Main.storyboard */,
 				64BB7F4B1C8DFB79005627C4 /* Assets.xcassets */,
-				64BB7F4D1C8DFB79005627C4 /* LaunchScreen.storyboard */,
 				64BB7F501C8DFB79005627C4 /* Info.plist */,
 				64BB7F3F1C8DFB78005627C4 /* Supporting Files */,
 			);
@@ -93,6 +82,9 @@
 		64BB7F3F1C8DFB78005627C4 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				64BB7F421C8DFB78005627C4 /* AppDelegate.h */,
+				64BB7F431C8DFB78005627C4 /* AppDelegate.m */,
+				7B5618041CE3A6F400A12A57 /* practice.xcdatamodeld */,
 				64BB7F401C8DFB78005627C4 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -101,10 +93,12 @@
 		7B5973BF1CE2FE13001A7F28 /* model */ = {
 			isa = PBXGroup;
 			children = (
+				7B5618071CE3A72F00A12A57 /* Fact+CoreDataProperties.h */,
+				7B5618081CE3A72F00A12A57 /* Fact+CoreDataProperties.m */,
+				7B5618091CE3A72F00A12A57 /* Fact.h */,
+				7B56180A1CE3A72F00A12A57 /* Fact.m */,
 				64BB7F591C8E33D2005627C4 /* ColorWheel.h */,
-				64BB7F571C8E1CE9005627C4 /* FactBook.m */,
 				64BB7F5A1C8E33D2005627C4 /* ColorWheel.m */,
-				64BB7F561C8E1CE9005627C4 /* FactBook.h */,
 			);
 			name = model;
 			sourceTree = "<group>";
@@ -114,7 +108,6 @@
 			children = (
 				64BB7F451C8DFB78005627C4 /* ViewController.h */,
 				64BB7F461C8DFB78005627C4 /* ViewController.m */,
-				7B5618041CE3A6F400A12A57 /* Model.xcdatamodeld */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -122,6 +115,8 @@
 		7B5973C11CE2FE2E001A7F28 /* view */ = {
 			isa = PBXGroup;
 			children = (
+				64BB7F481C8DFB78005627C4 /* Main.storyboard */,
+				64BB7F4D1C8DFB79005627C4 /* LaunchScreen.storyboard */,
 			);
 			name = view;
 			sourceTree = "<group>";
@@ -200,10 +195,9 @@
 				64BB7F471C8DFB78005627C4 /* ViewController.m in Sources */,
 				7B56180B1CE3A72F00A12A57 /* Fact+CoreDataProperties.m in Sources */,
 				64BB7F441C8DFB78005627C4 /* AppDelegate.m in Sources */,
-				64BB7F581C8E1CE9005627C4 /* FactBook.m in Sources */,
 				64BB7F411C8DFB78005627C4 /* main.m in Sources */,
 				64BB7F5B1C8E33D2005627C4 /* ColorWheel.m in Sources */,
-				7B5618061CE3A6F400A12A57 /* Model.xcdatamodeld in Sources */,
+				7B5618061CE3A6F400A12A57 /* practice.xcdatamodeld in Sources */,
 				7B56180C1CE3A72F00A12A57 /* Fact.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -368,13 +362,13 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		7B5618041CE3A6F400A12A57 /* Model.xcdatamodeld */ = {
+		7B5618041CE3A6F400A12A57 /* practice.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				7B5618051CE3A6F400A12A57 /* Model.xcdatamodel */,
+				7B5618051CE3A6F400A12A57 /* practice.xcdatamodel */,
 			);
-			currentVersion = 7B5618051CE3A6F400A12A57 /* Model.xcdatamodel */;
-			path = Model.xcdatamodeld;
+			currentVersion = 7B5618051CE3A6F400A12A57 /* practice.xcdatamodel */;
+			path = practice.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
