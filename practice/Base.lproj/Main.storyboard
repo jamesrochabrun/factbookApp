@@ -17,8 +17,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cat" translatesAutoresizingMaskIntoConstraints="NO" id="dDf-R4-mVl" customClass="CatImage">
-                                <rect key="frame" x="85" y="237" width="150" height="94"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="catRunner" translatesAutoresizingMaskIntoConstraints="NO" id="dDf-R4-mVl" customClass="CatImage">
+                                <rect key="frame" x="81" y="215" width="120" height="90"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="An Interesting fact goes here" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4GI-Hh-cQ1">
                                 <rect key="frame" x="44" y="274" width="233" height="21"/>
@@ -26,45 +26,40 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dmk-DT-UVd">
-                                <rect key="frame" x="48" y="466" width="225" height="50"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="MMR-Hq-ioj"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="18"/>
-                                <color key="tintColor" red="0.29803921568627451" green="0.68235294117647061" blue="0.68627450980392157" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="Show another fun fact"/>
-                                <connections>
-                                    <action selector="showFunFact" destination="BYZ-38-t0r" eventType="touchUpInside" id="gnT-KP-1Tv"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Did you know?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6vt-J6-5S7">
-                                <rect key="frame" x="48" y="60" width="138" height="22"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Did you know?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6vt-J6-5S7">
+                                <rect key="frame" x="44" y="60" width="138" height="22"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="22" id="DoZ-km-Evw"/>
                                     <constraint firstAttribute="width" constant="138" id="MIN-tI-Ant"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="19"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="0.5" colorSpace="calibratedRGB"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Catch the Cat for another Fun Fact!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZhM-AW-XC4">
+                                <rect key="frame" x="-2" y="517" width="324" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="TQE-nK-YKe"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="15"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" red="0.3529411764705882" green="0.73333333333333328" blue="0.74117647058823533" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstAttribute="trailingMargin" secondItem="4GI-Hh-cQ1" secondAttribute="trailing" constant="27" id="3sd-Z9-n51"/>
-                            <constraint firstAttribute="trailing" secondItem="dmk-DT-UVd" secondAttribute="trailing" constant="47" id="QLh-xg-ijP"/>
+                            <constraint firstItem="ZhM-AW-XC4" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-18" id="7Tb-SU-Oyk"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="ZhM-AW-XC4" secondAttribute="bottom" constant="26" id="8oT-7f-EWg"/>
                             <constraint firstItem="4GI-Hh-cQ1" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="28" id="Rsi-HF-esC"/>
                             <constraint firstItem="6vt-J6-5S7" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="28" id="Tk4-nH-W1U"/>
-                            <constraint firstItem="dmk-DT-UVd" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="48" id="UW9-Et-5Nx"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="dmk-DT-UVd" secondAttribute="bottom" constant="52" id="Wcc-Np-b35"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ZhM-AW-XC4" secondAttribute="trailing" constant="-18" id="ksV-rE-JWd"/>
                             <constraint firstItem="4GI-Hh-cQ1" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="rJZ-eq-hZq"/>
                             <constraint firstItem="6vt-J6-5S7" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="40" id="vFf-D6-NNA"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="cat" destination="dDf-R4-mVl" id="roB-mn-4UL"/>
-                        <outlet property="funFactButton" destination="dmk-DT-UVd" id="fG5-k9-DtD"/>
                         <outlet property="funFactLabel" destination="4GI-Hh-cQ1" id="eGH-Ax-aif"/>
                     </connections>
                 </viewController>
@@ -74,6 +69,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="cat" width="286" height="187"/>
+        <image name="catRunner" width="286" height="187"/>
     </resources>
 </document>

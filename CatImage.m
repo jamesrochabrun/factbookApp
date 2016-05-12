@@ -29,14 +29,12 @@
     return self;
 }
 
-
 -(void)handleTap:(UITapGestureRecognizer *)gestureRecognizer {
     
     if (gestureRecognizer.state == UIGestureRecognizerStateRecognized ||
         gestureRecognizer.state == UIGestureRecognizerStateBegan) {
 
         [self.delegate didTapImage];
-        NSLog(@"touch me");
     }
 }
 

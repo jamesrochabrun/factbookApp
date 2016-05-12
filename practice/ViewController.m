@@ -15,8 +15,6 @@
 @interface ViewController ()<CatImageDelegate>
 @property NSMutableArray *facts;
 @property NSManagedObjectContext *moc;
-@property UIDynamicAnimator *animator;
-@property  UICollisionBehavior *collision;
 
 
 @end
@@ -29,13 +27,12 @@
     AppDelegate *appDelegate = [[UIApplication sharedApplication]delegate];
     self.moc = appDelegate.managedObjectContext;
     
-    self.cat.delegate = self;
     [self start];
+    self.cat.delegate = self;
     
     [self loadFacts];
     if(self.facts.count < 1){
         [self getJson];
-
     }
     
     NSLog(@"sqlite dir = \n%@", appDelegate.applicationDocumentsDirectory);
@@ -48,7 +45,6 @@
 }
 
 - (void)onTimer {
-    
     self.cat.center = CGPointMake(self.cat.center.x + self.pos.x, self.cat.center.y + self.pos.y);
     if(self.cat.center.x > self.view.frame.size.width || self.cat.center.x < 0){
         self.pos = CGPointMake((self.pos.x * -1), self.pos.y );
@@ -65,6 +61,7 @@
     UIColor *randomColor = [self.colorWheel randomColor];
     self.funFactButton.tintColor = randomColor;
     self.view.backgroundColor = randomColor;
+
 }
 
 - (void)getJson {
@@ -117,15 +114,7 @@
     }
 }
 
-- (IBAction)showFunFact {
-    UIColor *randomColor = [self.colorWheel randomColor];
-    self.funFactButton.tintColor = randomColor;
-    self.view.backgroundColor = randomColor;
-    int randomInt = arc4random_uniform((int)self.facts.count);
-    Fact *fact = [self.facts objectAtIndex:randomInt];
-    self.funFactLabel.text = fact.factText;
-}
-
+//delegate method
 - (void)didTapImage {
     UIColor *randomColor = [self.colorWheel randomColor];
     self.funFactButton.tintColor = randomColor;
@@ -133,6 +122,7 @@
     int randomInt = arc4random_uniform((int)self.facts.count);
     Fact *fact = [self.facts objectAtIndex:randomInt];
     self.funFactLabel.text = fact.factText;
+
 }
 
 
