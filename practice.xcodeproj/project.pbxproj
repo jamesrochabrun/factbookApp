@@ -17,6 +17,7 @@
 		7B5618061CE3A6F400A12A57 /* practice.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7B5618041CE3A6F400A12A57 /* practice.xcdatamodeld */; };
 		7B56180B1CE3A72F00A12A57 /* Fact+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B5618081CE3A72F00A12A57 /* Fact+CoreDataProperties.m */; };
 		7B56180C1CE3A72F00A12A57 /* Fact.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B56180A1CE3A72F00A12A57 /* Fact.m */; };
+		7BC606A41CE3F4D5001BC5A7 /* James.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7BC606A31CE3F4D5001BC5A7 /* James.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,7 @@
 		7B5618081CE3A72F00A12A57 /* Fact+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "Fact+CoreDataProperties.m"; path = "../Fact+CoreDataProperties.m"; sourceTree = "<group>"; };
 		7B5618091CE3A72F00A12A57 /* Fact.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Fact.h; path = ../Fact.h; sourceTree = "<group>"; };
 		7B56180A1CE3A72F00A12A57 /* Fact.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Fact.m; path = ../Fact.m; sourceTree = "<group>"; };
+		7BC606A31CE3F4D5001BC5A7 /* James.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = James.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 				7B5973BF1CE2FE13001A7F28 /* model */,
 				7B5973C11CE2FE2E001A7F28 /* view */,
 				64BB7F4B1C8DFB79005627C4 /* Assets.xcassets */,
+				7BC606A31CE3F4D5001BC5A7 /* James.jpg */,
 				64BB7F501C8DFB79005627C4 /* Info.plist */,
 				64BB7F3F1C8DFB78005627C4 /* Supporting Files */,
 			);
@@ -179,6 +182,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7BC606A41CE3F4D5001BC5A7 /* James.jpg in Resources */,
 				64BB7F4F1C8DFB79005627C4 /* LaunchScreen.storyboard in Resources */,
 				64BB7F4C1C8DFB79005627C4 /* Assets.xcassets in Resources */,
 				64BB7F4A1C8DFB78005627C4 /* Main.storyboard in Resources */,

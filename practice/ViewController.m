@@ -15,6 +15,9 @@
 @interface ViewController ()
 @property NSMutableArray *facts;
 @property NSManagedObjectContext *moc;
+@property UIDynamicAnimator *animator;
+@property  UICollisionBehavior *collision;
+
 
 
 @end
@@ -27,12 +30,37 @@
     AppDelegate *appDelegate = [[UIApplication sharedApplication]delegate];
     self.moc = appDelegate.managedObjectContext;
     
+    [self start];
+    
     [self loadFacts];
     if(self.facts.count < 1){
         [self getJson];
+
     }
+    
+    
     NSLog(@"sqlite dir = \n%@", appDelegate.applicationDocumentsDirectory);
 }
+
+
+- (void)start {
+    self.timer = [NSTimer scheduledTimerWithTimeInterval:(0.03) target:self selector:@selector(onTimer) userInfo:nil repeats:YES];
+    self.pos = CGPointMake(3.0, 4.0);
+}
+
+- (void)onTimer {
+    self.cat.center = CGPointMake(self.cat.center.x + self.pos.x, self.cat.center.y + self.pos.y);
+
+    if(self.cat.center.x > self.view.frame.size.width || self.cat.center.x < 0){
+        self.pos = CGPointMake((self.pos.x * -1), self.pos.y );
+    }
+    if(self.cat.center.y > self.view.frame.size.height || self.cat.center.y < 0){
+        self.pos = CGPointMake(self.pos.x , (self.pos.y * -1));
+    }
+    
+
+}
+
 
 - (void)firstColorView {
     self.colorWheel = [[ColorWheel alloc] init];
@@ -98,6 +126,7 @@
     int randomInt = arc4random_uniform((int)self.facts.count);
     Fact *fact = [self.facts objectAtIndex:randomInt];
     self.funFactLabel.text = fact.factText;
+
 }
 
 

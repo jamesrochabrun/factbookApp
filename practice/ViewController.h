@@ -15,6 +15,9 @@
 
 @property (strong, nonatomic) ColorWheel *colorWheel;
 @property (weak, nonatomic) IBOutlet UIButton *funFactButton;
+@property (weak, nonatomic) IBOutlet UIImageView *cat;
+@property CGPoint pos;
+@property NSTimer *timer;
 
 
 
