@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -16,19 +17,53 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="runner" translatesAutoresizingMaskIntoConstraints="NO" id="HGy-MT-FNr">
-                                <rect key="frame" x="250" y="233" width="100" height="134"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="150" y="209" width="100" height="134"/>
-                                </variation>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Cat runner Fun Facts" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yEs-qX-tIH">
+                                <rect key="frame" x="179" y="412" width="242" height="28"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="15"/>
+                                <color key="textColor" red="0.0078431372550000003" green="0.6588235294" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" fixedFrame="YES" image="runner" translatesAutoresizingMaskIntoConstraints="NO" id="HGy-MT-FNr">
+                                <rect key="frame" x="237" y="215" width="127" height="170"/>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" red="0.0078431372549019607" green="0.6588235294117647" blue="0.95686274509803915" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="HGy-MT-FNr" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="122" id="9a7-Uy-QX1"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="yEs-qX-tIH" secondAttribute="bottom" constant="35" id="A7N-7j-obW"/>
+                            <constraint firstItem="HGy-MT-FNr" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="68" id="HU3-ds-dRm"/>
+                            <constraint firstItem="yEs-qX-tIH" firstAttribute="top" secondItem="HGy-MT-FNr" secondAttribute="bottom" constant="84" id="Snp-8a-KzF"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="HGy-MT-FNr" secondAttribute="trailing" constant="67" id="UP6-q9-oaj"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="yEs-qX-tIH" secondAttribute="trailing" constant="59" id="uX6-r8-mx9"/>
+                            <constraint firstItem="yEs-qX-tIH" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="59" id="xoD-Zw-eJW"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="9a7-Uy-QX1"/>
+                                <exclude reference="HU3-ds-dRm"/>
+                                <exclude reference="UP6-q9-oaj"/>
+                                <exclude reference="Snp-8a-KzF"/>
+                                <exclude reference="uX6-r8-mx9"/>
+                                <exclude reference="xoD-Zw-eJW"/>
+                                <exclude reference="A7N-7j-obW"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="9a7-Uy-QX1"/>
+                                <include reference="HU3-ds-dRm"/>
+                                <include reference="UP6-q9-oaj"/>
+                                <include reference="Snp-8a-KzF"/>
+                                <include reference="uX6-r8-mx9"/>
+                                <include reference="xoD-Zw-eJW"/>
+                                <include reference="A7N-7j-obW"/>
+                            </mask>
+                        </variation>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53" y="375"/>
+            <point key="canvasLocation" x="52.5" y="375"/>
         </scene>
     </scenes>
     <resources>

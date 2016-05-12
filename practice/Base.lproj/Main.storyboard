@@ -45,13 +45,26 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Aow-qd-WMf">
+                                <rect key="frame" x="246" y="35" width="47" height="47"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="47" id="opz-QL-Zvy"/>
+                                    <constraint firstAttribute="width" constant="47" id="tz7-VR-gnI"/>
+                                </constraints>
+                                <state key="normal" image="s"/>
+                                <connections>
+                                    <action selector="onShareButtonPresssed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="U2F-id-P9v"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.3529411764705882" green="0.73333333333333328" blue="0.74117647058823533" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstAttribute="trailingMargin" secondItem="4GI-Hh-cQ1" secondAttribute="trailing" constant="27" id="3sd-Z9-n51"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Aow-qd-WMf" secondAttribute="trailing" constant="7" id="4KG-mO-PLp"/>
                             <constraint firstItem="ZhM-AW-XC4" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-18" id="7Tb-SU-Oyk"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="ZhM-AW-XC4" secondAttribute="bottom" constant="26" id="8oT-7f-EWg"/>
                             <constraint firstItem="4GI-Hh-cQ1" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="28" id="Rsi-HF-esC"/>
+                            <constraint firstItem="Aow-qd-WMf" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="15" id="Ssb-hU-kA7"/>
                             <constraint firstItem="6vt-J6-5S7" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="28" id="Tk4-nH-W1U"/>
                             <constraint firstAttribute="trailingMargin" secondItem="ZhM-AW-XC4" secondAttribute="trailing" constant="-18" id="ksV-rE-JWd"/>
                             <constraint firstItem="4GI-Hh-cQ1" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="rJZ-eq-hZq"/>
@@ -61,6 +74,7 @@
                     <connections>
                         <outlet property="cat" destination="dDf-R4-mVl" id="roB-mn-4UL"/>
                         <outlet property="funFactLabel" destination="4GI-Hh-cQ1" id="eGH-Ax-aif"/>
+                        <outlet property="shareButton" destination="Aow-qd-WMf" id="vTW-W4-UhA"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -70,5 +84,6 @@
     </scenes>
     <resources>
         <image name="catRunner" width="286" height="187"/>
+        <image name="s" width="116" height="116"/>
     </resources>
 </document>

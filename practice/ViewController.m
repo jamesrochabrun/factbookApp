@@ -15,6 +15,7 @@
 @interface ViewController ()<CatImageDelegate>
 @property NSMutableArray *facts;
 @property NSManagedObjectContext *moc;
+@property (weak, nonatomic) IBOutlet UIButton *shareButton;
 
 
 @end
@@ -41,7 +42,7 @@
 
 - (void)start {
     self.timer = [NSTimer scheduledTimerWithTimeInterval:(0.03) target:self selector:@selector(onTimer) userInfo:nil repeats:YES];
-    self.pos = CGPointMake(3.0, 4.0);
+    self.pos = CGPointMake(6.0, 6.0);
 }
 
 - (void)onTimer {
@@ -78,9 +79,17 @@
         self.facts = [NSMutableArray new];
         
         for (NSString *factData in factsData) {
-            Fact *fact = [NSEntityDescription insertNewObjectForEntityForName:@"Fact" inManagedObjectContext:self.moc];
-            fact.factText = factData;
-            [self.facts addObject:fact];
+            
+            if (![factData isEqualToString:@"Every time you masturbate God kills a kitten. Please, think of the kittens."]){
+                
+                Fact *fact = [NSEntityDescription insertNewObjectForEntityForName:@"Fact" inManagedObjectContext:self.moc];
+                fact.factText = factData;
+                [self.facts addObject:fact];
+                NSLog(@"this is the count %lu" , (unsigned long)self.facts.count);
+            } else{
+                NSLog(@"%@", factData);
+            }
+            
         }
         NSError *mocError;
         if([self.moc save:&mocError]){
@@ -103,6 +112,7 @@
     NSFetchRequest *request = [[NSFetchRequest alloc]initWithEntityName:@"Fact"];
     NSError *error;
     self.facts = [[self.moc executeFetchRequest:request error:&error]mutableCopy];
+    
     if(error == nil){
     }else{
         NSLog(@"Error: %@", error);
@@ -122,7 +132,28 @@
     int randomInt = arc4random_uniform((int)self.facts.count);
     Fact *fact = [self.facts objectAtIndex:randomInt];
     self.funFactLabel.text = fact.factText;
+}
 
+
+- (IBAction)onShareButtonPresssed:(UIButton *)sender {
+    
+    [[self shareButton] setEnabled:NO];
+    
+    NSString *shareText = [NSString stringWithFormat:@"%@", self.funFactLabel.text ];
+ 
+    UIActivityViewController *activityViewController =
+    [[UIActivityViewController alloc] initWithActivityItems:@[shareText]
+                                      applicationActivities:nil];
+    
+    [activityViewController setModalTransitionStyle:UIModalTransitionStyleCoverVertical];
+    
+    [activityViewController setExcludedActivityTypes:@[UIActivityTypePostToWeibo,
+                                                       UIActivityTypeCopyToPasteboard,
+                                                       UIActivityTypeMessage]];
+    
+    [self presentViewController:activityViewController animated:YES completion:^{
+        [[self shareButton] setEnabled:YES];
+    }];
 }
 
 

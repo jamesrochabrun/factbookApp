@@ -11,12 +11,12 @@
 		64BB7F441C8DFB78005627C4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 64BB7F431C8DFB78005627C4 /* AppDelegate.m */; };
 		64BB7F471C8DFB78005627C4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 64BB7F461C8DFB78005627C4 /* ViewController.m */; };
 		64BB7F4A1C8DFB78005627C4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 64BB7F481C8DFB78005627C4 /* Main.storyboard */; };
-		64BB7F4C1C8DFB79005627C4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 64BB7F4B1C8DFB79005627C4 /* Assets.xcassets */; };
 		64BB7F4F1C8DFB79005627C4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 64BB7F4D1C8DFB79005627C4 /* LaunchScreen.storyboard */; };
 		64BB7F5B1C8E33D2005627C4 /* ColorWheel.m in Sources */ = {isa = PBXBuildFile; fileRef = 64BB7F5A1C8E33D2005627C4 /* ColorWheel.m */; };
 		7B5618061CE3A6F400A12A57 /* practice.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7B5618041CE3A6F400A12A57 /* practice.xcdatamodeld */; };
 		7B56180B1CE3A72F00A12A57 /* Fact+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B5618081CE3A72F00A12A57 /* Fact+CoreDataProperties.m */; };
 		7B56180C1CE3A72F00A12A57 /* Fact.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B56180A1CE3A72F00A12A57 /* Fact.m */; };
+		7BB7CE571CE4F79700F04420 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7BB7CE561CE4F79700F04420 /* Assets.xcassets */; };
 		7BC606A71CE44E10001BC5A7 /* CatImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BC606A61CE44E10001BC5A7 /* CatImage.m */; };
 /* End PBXBuildFile section */
 
@@ -28,7 +28,6 @@
 		64BB7F451C8DFB78005627C4 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		64BB7F461C8DFB78005627C4 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		64BB7F491C8DFB78005627C4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		64BB7F4B1C8DFB79005627C4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		64BB7F4E1C8DFB79005627C4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		64BB7F501C8DFB79005627C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		64BB7F591C8E33D2005627C4 /* ColorWheel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorWheel.h; sourceTree = "<group>"; };
@@ -38,6 +37,7 @@
 		7B5618081CE3A72F00A12A57 /* Fact+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "Fact+CoreDataProperties.m"; path = "../Fact+CoreDataProperties.m"; sourceTree = "<group>"; };
 		7B5618091CE3A72F00A12A57 /* Fact.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Fact.h; path = ../Fact.h; sourceTree = "<group>"; };
 		7B56180A1CE3A72F00A12A57 /* Fact.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Fact.m; path = ../Fact.m; sourceTree = "<group>"; };
+		7BB7CE561CE4F79700F04420 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7BC606A51CE44E10001BC5A7 /* CatImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CatImage.h; path = ../CatImage.h; sourceTree = "<group>"; };
 		7BC606A61CE44E10001BC5A7 /* CatImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CatImage.m; path = ../CatImage.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -75,8 +75,8 @@
 				7B5973C01CE2FE21001A7F28 /* Controller */,
 				7B5973BF1CE2FE13001A7F28 /* model */,
 				7B5973C11CE2FE2E001A7F28 /* view */,
-				64BB7F4B1C8DFB79005627C4 /* Assets.xcassets */,
 				64BB7F4D1C8DFB79005627C4 /* LaunchScreen.storyboard */,
+				7BB7CE561CE4F79700F04420 /* Assets.xcassets */,
 				64BB7F481C8DFB78005627C4 /* Main.storyboard */,
 				64BB7F501C8DFB79005627C4 /* Info.plist */,
 				64BB7F3F1C8DFB78005627C4 /* Supporting Files */,
@@ -185,7 +185,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				64BB7F4F1C8DFB79005627C4 /* LaunchScreen.storyboard in Resources */,
-				64BB7F4C1C8DFB79005627C4 /* Assets.xcassets in Resources */,
+				7BB7CE571CE4F79700F04420 /* Assets.xcassets in Resources */,
 				64BB7F4A1C8DFB78005627C4 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
