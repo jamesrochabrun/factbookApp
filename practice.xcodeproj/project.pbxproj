@@ -18,6 +18,7 @@
 		7B56180B1CE3A72F00A12A57 /* Fact+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B5618081CE3A72F00A12A57 /* Fact+CoreDataProperties.m */; };
 		7B56180C1CE3A72F00A12A57 /* Fact.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B56180A1CE3A72F00A12A57 /* Fact.m */; };
 		7BC606A41CE3F4D5001BC5A7 /* James.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7BC606A31CE3F4D5001BC5A7 /* James.jpg */; };
+		7BC606A71CE44E10001BC5A7 /* CatImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BC606A61CE44E10001BC5A7 /* CatImage.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +40,8 @@
 		7B5618091CE3A72F00A12A57 /* Fact.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Fact.h; path = ../Fact.h; sourceTree = "<group>"; };
 		7B56180A1CE3A72F00A12A57 /* Fact.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Fact.m; path = ../Fact.m; sourceTree = "<group>"; };
 		7BC606A31CE3F4D5001BC5A7 /* James.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = James.jpg; sourceTree = "<group>"; };
+		7BC606A51CE44E10001BC5A7 /* CatImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CatImage.h; path = ../CatImage.h; sourceTree = "<group>"; };
+		7BC606A61CE44E10001BC5A7 /* CatImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CatImage.m; path = ../CatImage.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +99,8 @@
 		7B5973BF1CE2FE13001A7F28 /* model */ = {
 			isa = PBXGroup;
 			children = (
+				7BC606A51CE44E10001BC5A7 /* CatImage.h */,
+				7BC606A61CE44E10001BC5A7 /* CatImage.m */,
 				7B5618071CE3A72F00A12A57 /* Fact+CoreDataProperties.h */,
 				7B5618081CE3A72F00A12A57 /* Fact+CoreDataProperties.m */,
 				7B5618091CE3A72F00A12A57 /* Fact.h */,
@@ -196,6 +201,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7BC606A71CE44E10001BC5A7 /* CatImage.m in Sources */,
 				64BB7F471C8DFB78005627C4 /* ViewController.m in Sources */,
 				7B56180B1CE3A72F00A12A57 /* Fact+CoreDataProperties.m in Sources */,
 				64BB7F441C8DFB78005627C4 /* AppDelegate.m in Sources */,
