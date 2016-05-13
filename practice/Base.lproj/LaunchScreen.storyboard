@@ -17,17 +17,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Cat runner Fun Facts" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yEs-qX-tIH">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Cat runner Fun Facts!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yEs-qX-tIH">
                                 <rect key="frame" x="179" y="412" width="242" height="28"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="15"/>
-                                <color key="textColor" red="0.0078431372550000003" green="0.6588235294" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" fixedFrame="YES" image="runner" translatesAutoresizingMaskIntoConstraints="NO" id="HGy-MT-FNr">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" ambiguous="YES" misplaced="YES" image="runner" translatesAutoresizingMaskIntoConstraints="NO" id="HGy-MT-FNr">
                                 <rect key="frame" x="237" y="215" width="127" height="170"/>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.2196078431372549" green="0.60784313725490191" blue="0.73333333333333328" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="HGy-MT-FNr" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="122" id="9a7-Uy-QX1"/>
                             <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="yEs-qX-tIH" secondAttribute="bottom" constant="35" id="A7N-7j-obW"/>

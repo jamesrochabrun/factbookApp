@@ -75,8 +75,8 @@
 				7B5973C01CE2FE21001A7F28 /* Controller */,
 				7B5973BF1CE2FE13001A7F28 /* model */,
 				7B5973C11CE2FE2E001A7F28 /* view */,
-				64BB7F4D1C8DFB79005627C4 /* LaunchScreen.storyboard */,
 				7BB7CE561CE4F79700F04420 /* Assets.xcassets */,
+				64BB7F4D1C8DFB79005627C4 /* LaunchScreen.storyboard */,
 				64BB7F481C8DFB78005627C4 /* Main.storyboard */,
 				64BB7F501C8DFB79005627C4 /* Info.plist */,
 				64BB7F3F1C8DFB78005627C4 /* Supporting Files */,
@@ -316,8 +316,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				INFOPLIST_FILE = practice/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -332,8 +332,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				INFOPLIST_FILE = practice/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
