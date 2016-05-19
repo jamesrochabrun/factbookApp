@@ -41,8 +41,10 @@
 
 
 - (void)start {
-    self.timer = [NSTimer scheduledTimerWithTimeInterval:(0.03) target:self selector:@selector(onTimer) userInfo:nil repeats:YES];
-    self.pos = CGPointMake(6.0, 6.0);
+
+        self.timer = [NSTimer scheduledTimerWithTimeInterval:(0.03) target:self selector:@selector(onTimer) userInfo:nil repeats:YES];
+        self.pos = CGPointMake(6.0, 6.0);
+
 }
 
 - (void)onTimer {
@@ -137,12 +139,11 @@
 
 - (IBAction)onShareButtonPresssed:(UIButton *)sender {
     
-    [[self shareButton] setEnabled:NO];
-    
     NSString *shareText = [NSString stringWithFormat:@"%@", self.funFactLabel.text ];
- 
+    NSURL *shareLink = [[NSURL alloc] initWithString:@"https://itunes.apple.com/cl/app/cat-runner-facts/id1113727852?l=en&mt=8"];
+    
     UIActivityViewController *activityViewController =
-    [[UIActivityViewController alloc] initWithActivityItems:@[shareText]
+    [[UIActivityViewController alloc] initWithActivityItems:@[shareText,shareLink]
                                       applicationActivities:nil];
     
     [activityViewController setModalTransitionStyle:UIModalTransitionStyleCoverVertical];
@@ -151,10 +152,13 @@
                                                        UIActivityTypeCopyToPasteboard,
                                                        UIActivityTypeMessage]];
     
-    [self presentViewController:activityViewController animated:YES completion:^{
-        [[self shareButton] setEnabled:YES];
-    }];
+    dispatch_async(dispatch_get_main_queue(), ^(void){
+        [self presentViewController:activityViewController animated:YES completion:nil];
+    });
+    
 }
+
+
 
 
 
