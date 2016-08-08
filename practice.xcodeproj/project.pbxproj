@@ -13,6 +13,10 @@
 		64BB7F4A1C8DFB78005627C4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 64BB7F481C8DFB78005627C4 /* Main.storyboard */; };
 		64BB7F4F1C8DFB79005627C4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 64BB7F4D1C8DFB79005627C4 /* LaunchScreen.storyboard */; };
 		64BB7F5B1C8E33D2005627C4 /* ColorWheel.m in Sources */ = {isa = PBXBuildFile; fileRef = 64BB7F5A1C8E33D2005627C4 /* ColorWheel.m */; };
+		7B2B9FBF1D206E360057E9B1 /* cat3.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7B2B9FBE1D206E360057E9B1 /* cat3.mp3 */; };
+		7B2B9FC21D206E460057E9B1 /* cat1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7B2B9FC11D206E460057E9B1 /* cat1.mp3 */; };
+		7B2B9FC41D206E4D0057E9B1 /* cat2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7B2B9FC31D206E4D0057E9B1 /* cat2.mp3 */; };
+		7B2B9FC61D206FAE0057E9B1 /* cat4.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7B2B9FC51D206FAE0057E9B1 /* cat4.mp3 */; };
 		7B5618061CE3A6F400A12A57 /* practice.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7B5618041CE3A6F400A12A57 /* practice.xcdatamodeld */; };
 		7B56180B1CE3A72F00A12A57 /* Fact+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B5618081CE3A72F00A12A57 /* Fact+CoreDataProperties.m */; };
 		7B56180C1CE3A72F00A12A57 /* Fact.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B56180A1CE3A72F00A12A57 /* Fact.m */; };
@@ -32,6 +36,10 @@
 		64BB7F501C8DFB79005627C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		64BB7F591C8E33D2005627C4 /* ColorWheel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorWheel.h; sourceTree = "<group>"; };
 		64BB7F5A1C8E33D2005627C4 /* ColorWheel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ColorWheel.m; sourceTree = "<group>"; };
+		7B2B9FBE1D206E360057E9B1 /* cat3.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = cat3.mp3; sourceTree = "<group>"; };
+		7B2B9FC11D206E460057E9B1 /* cat1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = cat1.mp3; sourceTree = "<group>"; };
+		7B2B9FC31D206E4D0057E9B1 /* cat2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = cat2.mp3; sourceTree = "<group>"; };
+		7B2B9FC51D206FAE0057E9B1 /* cat4.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = cat4.mp3; sourceTree = "<group>"; };
 		7B5618051CE3A6F400A12A57 /* practice.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = practice.xcdatamodel; sourceTree = "<group>"; };
 		7B5618071CE3A72F00A12A57 /* Fact+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Fact+CoreDataProperties.h"; path = "../Fact+CoreDataProperties.h"; sourceTree = "<group>"; };
 		7B5618081CE3A72F00A12A57 /* Fact+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "Fact+CoreDataProperties.m"; path = "../Fact+CoreDataProperties.m"; sourceTree = "<group>"; };
@@ -95,6 +103,17 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		7B2B9FC01D206E3C0057E9B1 /* sounds */ = {
+			isa = PBXGroup;
+			children = (
+				7B2B9FC11D206E460057E9B1 /* cat1.mp3 */,
+				7B2B9FC31D206E4D0057E9B1 /* cat2.mp3 */,
+				7B2B9FBE1D206E360057E9B1 /* cat3.mp3 */,
+				7B2B9FC51D206FAE0057E9B1 /* cat4.mp3 */,
+			);
+			name = sounds;
+			sourceTree = "<group>";
+		};
 		7B5973BF1CE2FE13001A7F28 /* model */ = {
 			isa = PBXGroup;
 			children = (
@@ -104,6 +123,7 @@
 				7B56180A1CE3A72F00A12A57 /* Fact.m */,
 				64BB7F591C8E33D2005627C4 /* ColorWheel.h */,
 				64BB7F5A1C8E33D2005627C4 /* ColorWheel.m */,
+				7B2B9FC01D206E3C0057E9B1 /* sounds */,
 			);
 			name = model;
 			sourceTree = "<group>";
@@ -186,7 +206,11 @@
 			files = (
 				64BB7F4F1C8DFB79005627C4 /* LaunchScreen.storyboard in Resources */,
 				7BB7CE571CE4F79700F04420 /* Assets.xcassets in Resources */,
+				7B2B9FC61D206FAE0057E9B1 /* cat4.mp3 in Resources */,
+				7B2B9FC21D206E460057E9B1 /* cat1.mp3 in Resources */,
 				64BB7F4A1C8DFB78005627C4 /* Main.storyboard in Resources */,
+				7B2B9FBF1D206E360057E9B1 /* cat3.mp3 in Resources */,
+				7B2B9FC41D206E4D0057E9B1 /* cat2.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

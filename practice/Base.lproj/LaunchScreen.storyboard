@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -10,53 +9,44 @@
             <objects>
                 <viewController id="01J-lp-oVM" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="Llm-lL-Icb"/>
-                        <viewControllerLayoutGuide type="bottom" id="xb3-aO-Qok"/>
+                        <viewControllerLayoutGuide type="top" id="fNe-Z8-vjp"/>
+                        <viewControllerLayoutGuide type="bottom" id="0pv-tb-HN3"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                    <view key="view" contentMode="scaleToFill" id="KYN-I7-KxU">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Cat runner Fun Facts!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yEs-qX-tIH">
-                                <rect key="frame" x="179" y="412" width="242" height="28"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="15"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" ambiguous="YES" misplaced="YES" image="runner" translatesAutoresizingMaskIntoConstraints="NO" id="HGy-MT-FNr">
-                                <rect key="frame" x="237" y="215" width="127" height="170"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cat" translatesAutoresizingMaskIntoConstraints="NO" id="pWb-7L-acG">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" red="0.2196078431372549" green="0.60784313725490191" blue="0.73333333333333328" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.68541085138971247" green="0.85098039219999999" blue="0.66658420491285308" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="HGy-MT-FNr" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="122" id="9a7-Uy-QX1"/>
-                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="yEs-qX-tIH" secondAttribute="bottom" constant="35" id="A7N-7j-obW"/>
-                            <constraint firstItem="HGy-MT-FNr" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="68" id="HU3-ds-dRm"/>
-                            <constraint firstItem="yEs-qX-tIH" firstAttribute="top" secondItem="HGy-MT-FNr" secondAttribute="bottom" constant="84" id="Snp-8a-KzF"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="HGy-MT-FNr" secondAttribute="trailing" constant="67" id="UP6-q9-oaj"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="yEs-qX-tIH" secondAttribute="trailing" constant="59" id="uX6-r8-mx9"/>
-                            <constraint firstItem="yEs-qX-tIH" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="59" id="xoD-Zw-eJW"/>
+                            <constraint firstItem="pWb-7L-acG" firstAttribute="leading" secondItem="KYN-I7-KxU" secondAttribute="leading" id="ENk-F8-S3Q"/>
+                            <constraint firstAttribute="trailing" secondItem="pWb-7L-acG" secondAttribute="trailing" id="kGC-DF-RIV"/>
+                            <constraint firstItem="0pv-tb-HN3" firstAttribute="top" secondItem="pWb-7L-acG" secondAttribute="bottom" id="mCE-DU-VnA"/>
+                            <constraint firstItem="pWb-7L-acG" firstAttribute="top" secondItem="KYN-I7-KxU" secondAttribute="top" id="x0S-4W-8Hz"/>
                         </constraints>
                         <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="pWb-7L-acG"/>
+                            </mask>
                             <mask key="constraints">
-                                <exclude reference="9a7-Uy-QX1"/>
-                                <exclude reference="HU3-ds-dRm"/>
-                                <exclude reference="UP6-q9-oaj"/>
-                                <exclude reference="Snp-8a-KzF"/>
-                                <exclude reference="uX6-r8-mx9"/>
-                                <exclude reference="xoD-Zw-eJW"/>
-                                <exclude reference="A7N-7j-obW"/>
+                                <exclude reference="mCE-DU-VnA"/>
+                                <exclude reference="ENk-F8-S3Q"/>
+                                <exclude reference="kGC-DF-RIV"/>
+                                <exclude reference="x0S-4W-8Hz"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="pWb-7L-acG"/>
+                            </mask>
                             <mask key="constraints">
-                                <include reference="9a7-Uy-QX1"/>
-                                <include reference="HU3-ds-dRm"/>
-                                <include reference="UP6-q9-oaj"/>
-                                <include reference="Snp-8a-KzF"/>
-                                <include reference="uX6-r8-mx9"/>
-                                <include reference="xoD-Zw-eJW"/>
-                                <include reference="A7N-7j-obW"/>
+                                <include reference="mCE-DU-VnA"/>
+                                <include reference="ENk-F8-S3Q"/>
+                                <include reference="kGC-DF-RIV"/>
+                                <include reference="x0S-4W-8Hz"/>
                             </mask>
                         </variation>
                     </view>
@@ -67,6 +57,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="runner" width="279" height="372"/>
+        <image name="cat" width="620" height="620"/>
     </resources>
 </document>

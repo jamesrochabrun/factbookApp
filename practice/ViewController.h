@@ -7,8 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "ColorWheel.h"
 #import "CatImage.h"
+@class ColorWheel;
 
 
 @interface ViewController : UIViewController
@@ -16,7 +16,6 @@
 @property (weak, nonatomic) IBOutlet UILabel *funFactLabel;
 
 @property (strong, nonatomic) ColorWheel *colorWheel;
-@property (weak, nonatomic) IBOutlet UIButton *funFactButton;
 @property CGPoint pos;
 @property NSTimer *timer;
 @property (weak, nonatomic) IBOutlet CatImage *cat;
